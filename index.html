@@ -8,29 +8,56 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav id="navbar" class="navbar">
-            <a href="#" class="header--logo">
-                KEVIN REYNOLDS
-            </a>
-            <a href="https://github.com/OnlinePseudonym" id="profile-link" class="navbar--link" target="_blank">
-                <i class="fab fa-github"></i>
-                GitHub
-            </a>
-            <a href="https://codepen.io/OnlinePseudonym/" class="navbar--link" target="_blank">
-                <i class="fab fa-codepen"></i>
-                CodePen
-            </a>
-            <a href="#projects" class="navbar--link">
-                <i class="header--icon far fa-map"></i>
-                Projects
-            </a>
+        <nav id="navbar" class="navbar-container">
+            <div class="navbar">
+                <a href="#" class="header--logo">
+                    KEVIN REYNOLDS
+                </a>
+                <a href="https://github.com/OnlinePseudonym" id="profile-link" class="navbar--link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://codepen.io/OnlinePseudonym/" class="navbar--link" target="_blank">
+                    <i class="fab fa-codepen"></i>
+                    CodePen
+                </a>
+                <a href="#projects" class="navbar--link">
+                    <i class="header--icon far fa-map"></i>
+                    Projects
+                </a>
+            </div>
         </nav>
+        <section id="welcome-section" class="welcome">
+            <header class="welcome--header">
+                <h1>Kevin Reynolds</h1>
+                <p class="welcome--txt">Web Developer</p>
+            </header>
+        </section>
         <main>
-            <section id="welcome-section" class="welcome">
-                <header class="welcome--header">
-                    <h1>Kevin Reynolds</h1>
-                    <p class="welcome--txt">Web Developer</p>
-                </header>
+            <section class="bio">
+                <h1 class="title">About Me</h1>
+                <div class="seperator"></div>
+                <div class="about-me-container">
+                    <div class="about-me-pic">
+                        <div class="circle-1"></div>
+                        <div class="circle-2"></div>
+                        <img src="images/me.jpg" alt="A picture of a beautiful man">
+                    </div>
+                    <article class="about-me">
+                        <p class="body-txt">
+                            I'm a front-end web developer based out of Phoenix, Arizona. I am self-taught and highly motivated.
+                        </p>
+                        <p class="body-txt">
+                            I've been learning from various moocs and online courses since the beginning of 2017 and have laid
+                            a solid foundation of HTML, CSS and JS to build upon. I have some experience with a few other
+                            languages (C, Python, Java) but have been focusing on JavaScript.
+                        </p>
+                        <p class="body-txt">
+                            I am always learning, trying to expose myself to emerging technologies and trends. I am currently
+                            focusing on learning React and honing my design chops.</p>
+                        <p class="body-txt">I am a master googler, with Stack Overflow proficiency.</p>
+                    </article>
+                </div>
             </section>
             <section id="projects" class="featured--projects">
                 <h1 class="title">Featured Projects</h1>
@@ -198,8 +225,15 @@
                 </div>
             </section>
         </main>
-        <footer>
-            Photo by Christopher Gower on Unsplash
+        <footer class="footer-container">
+            <div class="footer">
+                <div class="logo footer--logo">KR</div>
+                <div class="footer-content">
+                    <p class="footer-txt footer-eml">contact@kevintreynolds.com</p>
+                    <p class="footer-txt">&copy; Kevin Reynolds 2018.</p>
+                    <p class="footer-txt">All rights reserved.</p>
+                </div>
+            </div>
         </footer>
         <script src="js/app.js"></script>
     </body>
