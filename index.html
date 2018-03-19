@@ -32,14 +32,174 @@
                     <p class="welcome--txt">Web Developer</p>
                 </header>
             </section>
-            <section id="projects" class="projects">
-                <div class="project-tile">
-                    <a href="www.someproject.org/project">linky poo</a>
+            <section id="projects" class="featured--projects">
+                <h1 class="title">Featured Projects</h1>
+                <div class="seperator"></div>
+                <div class="projects">
+                    <div class="project project1 project-tile">
+                        <a class="project--title link" href="https://www.kevintreynolds.com/projects/simon/">
+                            Live Demo: Simon
+                        </a>
+                        <div class="project--title-small">Simon</div>
+                        <div class="project--details-toggle">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="project--details--container">
+                            <div class="project--details">
+                                <h3 class="details-title">Tech Used</h3>
+                                <p class="details-txt">&bull; HTML</p>
+                                <p class="details-txt">&bull; CSS</p>
+                                <p class="details-txt">&bull; JS</p>
+                                <h3 class="details-title">Objective</h3>
+                                <p class="details-txt">Build a working version of 90's handheld game Simon</p>
+                                <h3 class="details-title">Highlights</h3>
+                                <p class="details-txt">
+                                    This was a challenging project for me, I had to completely scrap my JavaScript
+                                    when I thought I was almost done and start over fresh. I came accross a bug with
+                                    my timer which was being called within a function and creating new scope on each
+                                    call so decided to make the game a large class.
+                                </p>
+                                <p class="details-txt">
+                                    To be honest I feel like the project doesn't really adhere to best practices, I
+                                    don't have a ton of experience with classes and making it one giant class as
+                                    opposed to factoring it into smaller parts seem like the wrong way to go about it.
+                                </p>
+                                <p class="details-txt">
+                                    I still need to optimize for mobile, I have click events tied to mouseup and mousedown
+                                    and that is creating problems on mobile.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="project--link link" href="https://github.com/OnlinePseudonym/simon">View Source</a>
+                    </div>
+                    <div class="project project2 project-tile">
+                        <a class="project--title link" href="https://www.kevintreynolds.com/projects/calc/">Live Demo: JS Calc</a>
+                        <div class="project--title-small">Calculator</div>
+                        <div class="project--details-toggle">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="project--details--container">
+                            <div class="project--details">
+                                <h3 class="details-title">Tech Used</h3>
+                                <p class="details-txt">&bull; HTML</p>
+                                <p class="details-txt">&bull; CSS</p>
+                                <p class="details-txt">&bull; JS</p>
+                                <h3 class="details-title">Objective</h3>
+                                <p class="details-txt">Build a functional JavaScript Calculator</p>
+                                <h3 class="details-title">Highlights</h3>
+                                <p class="details-txt">
+                                    This calculator ended up being a bit trickier than I thought it would be. The biggest
+                                    hurdle was rounding errors from floating point arithmetic, I ended up adding a library
+                                    to help with calculation.
+                                </p>
+                                <p class="details-txt">
+                                    I had some gotchas I could have avoided if I'd mapped out the project more clearly from
+                                    the beginning, the parens where added as an after thought because I overlooked how
+                                    important they would be but it ended up being pretty trivial implementing them.
+                                </p>
+                                <p class="details-txt">
+                                    This project taught me the importance of considering the entire project at each step.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="project--link link" href="https://github.com/OnlinePseudonym/js_calc">View Source</a>
+                    </div>
+                    <div class="project project3 project-tile">
+                        <a class="project--title link" href="https://onlinepseudonym.github.io/neighborhood_map/">Live Demo: Interactive Map</a>
+                        <div class="project--title-small">Map</div>
+                        <div class="project--details-toggle">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="project--details--container">
+                            <div class="project--details">
+                                <h3 class="details-title">Tech Used</h3>
+                                <p class="details-txt">&bull; HTML</p>
+                                <p class="details-txt">&bull; CSS</p>
+                                <p class="details-txt">&bull; JS</p>
+                                <p class="details-txt">&bull; Knockout</p>
+                                <p class="details-txt">&bull; jQuery</p>
+                                <h3 class="details-title">Objective</h3>
+                                <p class="details-txt">Build an app using Google Maps API</p>
+                                <h3 class="details-title">Highlights</h3>
+                                <p class="details-txt">
+                                    This was the first project I completed where I started with nothing more than an idea,
+                                    this was also my first introduction to APIs.
+                                </p>
+                                <p class="details-txt">
+                                    Honestly I would do almost all of this differently now, from the technologies used to
+                                    the styling but I was incredibly proud of the fact that I jumped in and truely built
+                                    something from scratch. The projects I had completed up until this point had either
+                                    starter code or too much hand holding.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="project--link link" href="https://github.com/OnlinePseudonym/neighborhood_map">View Source</a>
+                    </div>
+                    <div class="project project4 project-tile">
+                        <a class="project--title link" href="https://onlinepseudonym.github.io/reactTicTacToe/">Live Demo: Tic Tac Toe</a>
+                        <div class="project--title-small">Tic Tac Toe</div>
+                        <div class="project--details-toggle">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="project--details--container">
+                            <div class="project--details">
+                                <h3 class="details-title">Tech Used</h3>
+                                <p class="details-txt">&bull; React</p>
+                                <p class="details-txt">&bull; CSS</p>
+                                <h3 class="details-title">Objective</h3>
+                                <p class="details-txt">Build a Tic Tac Toe game</p>
+                                <h3 class="details-title">Alternate</h3>
+                                <p class="details-txt">
+                                    <a class="tic-tac-link" href="https://codepen.io/OnlinePseudonym/pen/BYxjYX" target="_blank">Here</a> is a link to another Tic Tac Toe game I built using vanilla JS with
+                                    an AI that is frustrating to play!
+                                </p>
+                                <h3 class="details-title">Highlights</h3>
+                                <p class="details-txt">
+                                    This is one of a few tutorials I've completed to help me learn React. At some point
+                                    I'll update this to an app that I was a little more hands on with but for now I wanted
+                                    to show that I do at least have some familiarity with React
+                                </p>
+                                <p class="details-txt">
+                                    This was a good introduction to React and left some implementation up to the student which I liked but didn't cover much in depth.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="project--link link" href="https://github.com/OnlinePseudonym/reactTicTacToe">View Source</a>
+                    </div>
+                    <div class="project project5 project-tile">
+                        <a class="project--title link" href="https://www.kevintreynolds.com/projects/pomodoro/">Live Demo: Pomodoro Timer</a>
+                        <div class="project--title-small">Pomodoro Timer</div>
+                        <div class="project--details-toggle">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </div>
+                        <div class="project--details--container">
+                            <div class="project--details">
+                                <h3 class="details-title">Tech Used</h3>
+                                <p class="details-txt">&bull; HTML</p>
+                                <p class="details-txt">&bull; JS</p>
+                                <p class="details-txt">&bull; CSS</p>
+                                <h3 class="details-title">Objective</h3>
+                                <p class="details-txt">Build a productivity timer in JavaScript</p>
+                                <h3 class="details-title">Highlights</h3>
+                                <p class="details-txt">
+                                    Honestly there weren't a lot of gotchas in this particular project, it was all pretty
+                                    straight forward I think the most time consuming part of the project was stying
+                                    everything and getting the timer strokedash working the way I wanted.
+                                </p>
+                                <p class="details-txt">
+                                    I had a little experience using that technique for a small progress bar before but it
+                                    has been a while and I didn't animate it like I did here. Setting up the animation to
+                                    smoothly transition from work to break and vice versa was also a small gotcha.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="project--link link" href="https://github.com/OnlinePseudonym/pomodoro_timer">View Source</a>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            Photo by McDobbie Hu on Unsplash
+            Photo by Christopher Gower on Unsplash
         </footer>
         <script src="js/app.js"></script>
     </body>
