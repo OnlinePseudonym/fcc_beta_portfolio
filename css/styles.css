@@ -107,8 +107,8 @@ main {
 
 @media only screen and (min-width: 650px) {
     .navbar {
-        -ms-grid-columns: 3fr 1fr 1fr 1fr;
-            grid-template-columns: 3fr 1fr 1fr 1fr;
+        -ms-grid-columns: 3fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
     }
     .header--logo {
         grid-column: auto;
